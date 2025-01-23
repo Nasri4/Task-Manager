@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import KanbanBoard from './components/KanbanBoard';
 import TaskModal from './components/TaskModal';
 import ProgressBar from './components/ProgressBar';
+import Footer from './components/Footer';
 
 const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
