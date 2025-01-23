@@ -1,10 +1,32 @@
-import React from "react";
+import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-400 py-6 fixed bottom-0 left-0 right-0">
-      <div className="container mx-auto px-4 text-center">
-        <p>&copy; {new Date().getFullYear()} Nasri Website. All rights reserved.</p>
+    <footer className="bg-gradient-to-r from-blue-600 via-blue-500 to-blue-400 text-white text-center py-6">
+      <div className="max-w-7xl mx-auto px-4">
+        <p className="text-lg font-semibold">
+          &copy; 2025 Nasri. All rights reserved.
+        </p>
+        <div className="flex justify-center mt-4 space-x-4">
+          <a
+            href="#"
+            className="text-blue-100 hover:text-white transition-colors duration-200"
+          >
+            Privacy Policy
+          </a>
+          <a
+            href="#"
+            className="text-blue-100 hover:text-white transition-colors duration-200"
+          >
+            Terms of Service
+          </a>
+          <a
+            href="#"
+            className="text-blue-100 hover:text-white transition-colors duration-200"
+          >
+            Contact Us
+          </a>
+        </div>
       </div>
     </footer>
   );

@@ -1,23 +1,18 @@
-import React from "react";
+import React from 'react';
 
-const Header = () => {
+const Header = ({ logout }) => {
   return (
-    <>
-      <header className="bg-red-300 text-white px-4 py-3 flex items-center justify-between">
-        <div className="text-2xl font-bold">Nasri</div>
-        <nav>
-          <ul className="flex space-x-6">
-            <li><a href="#home" className="hover:text-red-400">Home</a></li>
-            <li><a href="#about" className="hover:text-red-400">About</a></li>
-            <li><a href="#services" className="hover:text-red-400">Services</a></li>
-            <li><a href="#contact" className="hover:text-red-400">Contact</a></li>
-          </ul>
-        </nav>
-        <button className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">
-          Get Started
+    <header className="bg-primary text-light p-4 shadow-md">
+      <div className="max-w-7xl mx-auto flex justify-between items-center">
+        <h1 className="text-3xl font-bold">Task Manager</h1>
+        <button
+          onClick={logout}
+          className="px-4 py-2 bg-red-500 text-light rounded-lg hover:bg-red-600 focus:outline-none focus:ring-2 text-white focus:ring-red-300"
+        >
+          Logout
         </button>
-      </header>
-    </>
+      </div>
+    </header>
   );
 };
 
