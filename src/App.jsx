@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import Auth from './components/Auth';
 import Header from './components/Header';
-import Footer from './components/Footer';
+import Footer from "./components/Footer";
 import KanbanBoard from './components/KanbanBoard';
 import TaskModal from './components/TaskModal';
 import ProgressBar from './components/ProgressBar';
-import Footer from './components/Footer';
+
 
 const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
